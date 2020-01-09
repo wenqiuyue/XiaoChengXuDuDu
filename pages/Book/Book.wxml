@@ -1,0 +1,13 @@
+<!-- 章节内容 -->
+ <scroll-view scroll-y style="height: 100%;position:absolute;"  scroll-with-animation="true" scroll-top="{{top}}">
+<view class='page' bindtap='popup'>
+  <!-- 标题 -->
+  <view>{{bookcontent.chapter.title}}</view>
+  <!-- 章节 -->
+  <text class='content'>{{bookcontent.chapter.cpContent}}</text>
+  <van-popup class="custom" show="{{ show }}" >
+    <view class='previous' bindtap='previous'>《上一页</view>
+    <view class='next' bindtap='next'>下一页》</view>
+  </van-popup> 
+</view>
+</scroll-view>

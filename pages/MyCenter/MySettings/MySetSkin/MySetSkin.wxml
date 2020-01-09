@@ -1,0 +1,77 @@
+<!--pages/skin/skin.wxml-->
+<view class="container">
+    <swiper class='lunbor' autoplay="true" indicator-dots="true" indicator-color="#f0f0f0" indicator-active-color="#0ea6cf">
+      <swiper-item>
+       <image bindtap='jumpToDetall' src='/img/skinimg/lunbor1.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/img/skinimg/lunbor2.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/img/skinimg/lunbor3.jpg'></image>
+      </swiper-item>
+    </swiper>
+  <!--中间分类-->
+  <view class='content_fenlei' >
+    <view class='content_fenlei01'>
+      <view class='item'>
+        <image src='/img/skinimg/jianyue.jpg'></image>
+        <text >简约</text>
+      </view>
+      <view class='item'>
+        <image src='/img/skinimg/gufeng.jpg'></image>
+        <text >古风</text>
+      </view>
+      <view class='item'>
+        <image src='/img/skinimg/xuanku.jpg'></image>
+        <text >炫酷</text>
+      </view>
+    </view>
+    <view class='content_fenlei02'>
+      <view class='item'>
+        <image src='/img/skinimg/youxi.jpg'></image>
+        <text >游戏</text>
+      </view>
+      <view class='item'>
+        <image src='/img/skinimg/gexing.png'></image>
+        <text >个性</text>
+      </view>
+      <view class='item'>
+        <image src='/img/skinimg/vip.jpg'></image>
+        <text >VIP</text>
+      </view>
+    </view> 
+  </view>
+  <!--新货来袭-->
+  <view class='content_xinhuo'>
+    <view class='content_xinhuo_title'>
+       <text>新货来袭</text>
+    </view>
+    <view class='inner'>
+      <view class='item2'>
+        <image src='/img/skinimg/hetang.jpg'></image>
+        <text>荷塘月色</text>
+     </view>
+     <view class='item2'>
+        <image src='/img/skinimg/lansefengyun.jpg'></image>
+        <text>蓝色风韵</text>
+     </view>
+     <view class='item2'>
+        <image src='/img/skinimg/taoyuan.jpg'></image>
+        <text>桃园山色</text>
+     </view>
+     <view class='item2'>
+        <image src='/img/skinimg/fengjing.jpg'></image>
+        <text>绿色草原</text>
+     </view>
+     <view class='item2'>
+        <image src='/img/skinimg/shuibingyue.jpg'></image>
+        <text>少女战士</text>
+     </view>
+     <view class='item2'>
+        <image src='/img/skinimg/cangshu.jpg'></image>
+        <text>萌萌仓鼠</text>
+     </view>
+    </view>
+  </view>
+</view>

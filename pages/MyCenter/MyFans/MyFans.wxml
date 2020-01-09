@@ -1,0 +1,14 @@
+<!--pages/MyFans/MyFans.wxml-->
+<view class="container">
+    <!--已关注的粉丝-->
+    <view class='fans' wx:for="{{myFans}}" wx:key="myFans" bindtap='fansRelease' data-rid='{{item.uid}}'>
+          <view class='fansLeft'>
+            <view class='fans-avater'>
+              <image class='fansIcon' src='{{item.userimg}}'></image>
+              <view class='fans-name'>{{item.username}}</view>
+            </view>
+              
+          </view>
+          <view class='fansRight'>进入 >></view>
+        </view>
+</view>

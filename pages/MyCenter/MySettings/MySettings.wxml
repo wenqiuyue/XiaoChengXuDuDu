@@ -1,0 +1,58 @@
+<!--pages/me/shezhi/shezhi.wxml-->
+<view class='{{className}}'></view>
+<view class='container'>
+<view class='MySettings_01zu'>
+    <view class='MySettings_01zu_1'>
+      <text class='title'>护眼模式</text>
+      <switch class='switch' bindchange="switch_huyan" color='#0eabcf' />
+    </view>
+    <view class='MySettings_01zu_2'>
+      <text class='title'>夜间模式</text>
+      <switch class='switch' bindchange="switch2Change" color='#0eabcf'/>
+    </view>
+</view>
+<view class='MySettings_01zu'>
+    <view class='MySettings_01zu_1' hover-class='ui_hover'>
+      <text class='title'>字号设置</text>
+      <text class='detail2'> ></text>
+    </view>
+    <view bindtap='jump_MySetSkin' class='MySettings_01zu_2' hover-class='ui_hover'>
+      <text class='title'>个性皮肤</text>
+      <text class='detail2'> ></text>
+    </view>
+</view>
+<view class='MySettings_01zu'>
+    <view bindtap="jump_MySetShield" class='MySettings_01zu_1' hover-class='ui_hover'>
+      <text class='title'>屏蔽设置</text>
+      <text class='detail2'> ></text>
+    </view>
+    <view bindtap='jump_MySetPrivacy' class='MySettings_01zu_2' hover-class='ui_hover'>
+      <text class='title'>隐私设置</text>
+      <text class='detail2'> ></text>
+    </view>
+</view>
+<view class='MySettings_01zu'>
+    <view class='MySettings_01zu_1' hover-class='ui_hover'>
+      <text class='title'>清理缓存</text>
+      <text class='huancun'>1kb</text>
+      <text class='detail2'>></text>
+    </view>
+</view>
+<view class='MySettings_01zu'>
+    <view bindtap="jump_MySetAboutUs" class='MySettings_01zu_1' hover-class='ui_hover'>
+      <text class='title'>关于我们</text>
+      <text class='detail2'> ></text>
+    </view>
+    <view class='MySettings_01zu_2' hover-class='ui_hover' bindtap='userfeedback'>
+      <text class='title'>意见反馈</text>
+      <text class='detail2'> ></text>
+    </view>
+</view>
+<view class='MySettings_01zu'>
+    <view class='MySettings_01zu_1' hover-class='ui_hover'>
+      <text class='title'>检查更新</text>
+      <text class='banben'>当前版本1.0</text>
+      <text class='detail2'>></text>
+    </view>
+</view>
+</view>

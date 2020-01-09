@@ -1,0 +1,4 @@
+<!-- 粉丝和关注的发布  -->
+<view class='container'>
+  <homeworks rid="{{ruserid}}"></homeworks>
+</view>

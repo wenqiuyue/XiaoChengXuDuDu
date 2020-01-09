@@ -1,0 +1,15 @@
+<!-- 书籍章节页面 -->
+<view class='chapter'>
+  <!-- 背景图片 -->
+  <view class='bgimg'>
+    <image src='/img/jingyu.png'></image>
+  </view>
+  <!-- 目录 -->
+  <view class="page">
+    <view class='chapter-title catalog'>
+      <text><text style='color:black;font-size:33rpx;font-weight: bold'>目录</text> 共{{bookchapter.chapters.length}}章</text> 
+      <text style='color:black;font-size:30rpx' bindtap='reverse'>倒序</text>
+    </view>
+    <view class='catalog' wx:for='{{bookchapter.chapters}}' wx:key="bookchapter" bindtap='beginRed' data-link='{{item.link}}' data-bookindex='{{index}}'>{{index+1}} {{item.title}}</view>
+  </view>
+</view>

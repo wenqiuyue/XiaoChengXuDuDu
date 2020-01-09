@@ -1,0 +1,81 @@
+<!-- 首页1.1 -->
+<scroll-view scroll-y style="height: 100%;position:absolute;" scroll-with-animation="true">
+  <view class='container'>
+    <!-- 删除评论提示 -->
+    <van-action-sheet show="{{ show }}" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect" />
+    <!-- 删除提示 -->
+    <van-dialog id="van-dialog" />
+    <!-- banner -->
+    <swiper class='homebanner' indicator-dots="rtue" autoplay='true' indicator-active-color='#2FB4D7' circular='true'>
+      <swiper-item>
+        <image src='/img/banner/banner.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/img/banner/banner2.jpg'></image>
+      </swiper-item>
+    </swiper>
+    <!-- 通告 -->
+    <van-notice-bar speed="45" text="读书好，好读书，读好书！独读小程序又有新书上架了哦~快来看看吧" />
+    <!-- 上次阅读 -->
+    <view class='last_reading' wx:if='{{isRecord}}'>
+      <image src='{{recordBook.cover}}'></image>
+      <text class='recordBook-title'>上次阅读 《{{recordBook.title}}》</text>
+      <text class='recordBook-continue' bindtap='continueRed'>继续阅读 >></text>
+    </view>
+    <view class='no-release' wx:if="{{!isRelease}}">暂无发布内容</view>
+    <view class='recommend' wx:for="{{release}}" wx:if="{{isRelease}}" wx:for-index="idx" wx:key="key">
+      <!-- 首页动态内容 -->
+      <view class='content' bindtap='detailedContent' data-idx='{{idx}}'>
+        <!-- 头像 -->
+        <view class='head'>
+          <image class='headpic' src='{{item.user.userimg}}'></image>
+          <text class='r_username'>{{item.user.username}}</text>
+          <view wx:if="{{!item.isfocus}}" class='guanzhu' catchtap='followMe' data-ruserid='{{item.ruserid}}' data-idx='{{idx}}'>关注+</view>
+        </view>
+        <!-- 文字内容 -->
+        <view class='recommendtext'>
+          <text>{{item.rtitle}}</text>
+          <text class='re_text'>{{item.rtext}}</text>
+        </view>
+      </view>
+      <!-- 评论 -->
+      <view class='comment'>
+        <!-- 评论区图标 -->
+        <view class='comment_pic'>
+          <image src='/img/home/pic1.png'></image>
+          <text>{{item.commentnum==null?0:item.commentnum}}</text>
+          <label bindtap='likeClick' data-rid='{{item.releaseid}}' data-idx='{{idx}}'>
+            <image src='/img/icon/likered.png'></image>
+            <text>{{item.rlikes==null?0:item.rlikes}}</text>
+          </label>
+          <image wx:if="{{item.ruserid==userid}}" class='del' src='/img/icon/del.png' bindtap='delContent' data-rid='{{item.releaseid}}'></image>
+        </view>
+        <!-- 评论内容 -->
+        <view class='comtext'>
+          <view class='comment_content' wx:for="{{comment}}" wx:key="comment" wx:for-item="comitem" wx:if="{{item.releaseid==comitem.releaseid}}" bindtap='isDel' data-rid='{{item.ruserid}}' data-comid='{{comitem.commentid}}' data-releaseid='{{comitem.releaseid}}'
+            data-idx='{{idx}}'>
+            <text class='commentuser'>{{comitem.user.username}}</text>
+            <text class='commenttext'>：{{comitem.commenttext}}</text>
+            <!-- <view>
+            <text class='commentuser'>\n云霓</text>
+            <text>\t回复\t</text>
+            <text class='commentuser'>dudu</text>
+            <text>：谢谢！</text>
+          </view> -->
+
+          </view>
+        </view>
+      </view>
+      <form bindsubmit='formsubmit'>
+        <view class='com'>
+          <input class='text' placeholder=" 评论..." name="title" name="com" value='{{inputValue}}' />
+          <input hidden='true' value='{{item.releaseid}}' name="releaseid"></input>
+          <input hidden='true' value='{{idx}}' name="index"></input>
+          <button class='button' form-type="submit">发送</button>
+        </view>
+      </form>
+    </view>
+    <view class='bottom'></view>
+  </view>
+  <custom-tabbar activeIndex='0'></custom-tabbar>
+</scroll-view>

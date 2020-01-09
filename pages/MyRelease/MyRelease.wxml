@@ -1,0 +1,61 @@
+<view class='container'>
+  <van-action-sheet show="{{ show }}" actions="{{ actions }}" bind:close="onClose" bind:select="onSelect" />
+
+  <!-- 删除发布提示 -->
+  <van-dialog title="标题" message="确定删除吗" show="{{ isDelReleaseshow }}" show-cancel-button bind:confirm="onConfirmDelRelease" bind:cancel="onCancelDelRelease">
+  </van-dialog>
+  <view class='recommend' wx:for="{{release}}" wx:for-index="idx" wx:key="release">
+    <!-- 首页动态内容 -->
+    <view class='content'>
+      <!-- 头像 -->
+      <view class='head'>
+        <image class='headpic' src='{{item.user.userimg}}'></image>
+        <text>{{item.user.username}}</text>
+        
+      </view>
+      <!-- 文字内容 -->
+      <view class='recommendtext'>
+        <text>{{item.rtitle}}</text>
+        <text class='re_text'>{{item.rtext}}</text>
+      </view>
+    </view>
+    <!-- 评论 -->
+    <view class='comment'>
+      <!-- 评论区图标 -->
+      <view class='comment_pic'>
+        <image src='/img/home/pic1.png'></image>
+        <text>{{item.commentnum==null?0:item.commentnum}}</text>
+        <label bindtap='likeClick' data-rid='{{item.releaseid}}' data-idx='{{idx}}'>
+          <image src='/img/icon/likered.png'></image>
+          <text>{{item.rlikes==null?0:item.rlikes}}</text>
+        </label>
+        <image class='del' src='/img/icon/del.png' catchtap='delContent' data-rid='{{item.releaseid}}' data-idx='{{idx}}'></image>
+      </view>
+      <!-- 评论内容 -->
+      <view class='comtext'>
+        <view class='comment_content' wx:for="{{comment}}" wx:for-item="comitem" wx:if="{{item.releaseid==comitem.releaseid}}" wx:key="comment" bindtap='isDel' data-rid='{{item.ruserid}}' data-comid='{{comitem.commentid}}' data-releaseid='{{comitem.releaseid}}'
+          data-idx='{{idx}}'>
+          <text class='commentuser'>{{comitem.user.username}}</text>
+          <text class='commenttext'>：{{comitem.commenttext}}</text>
+          <!-- <view>
+            <text class='commentuser'>\n云霓</text>
+            <text>\t回复\t</text>
+            <text class='commentuser'>dudu</text>
+            <text>：谢谢！</text>
+          </view> -->
+
+        </view>
+      </view>
+    </view>
+    <form bindsubmit='formsubmit'>
+      <view class='com'>
+        <input class='text' placeholder=" 评论..." name="title" name="com" value='{{inputValue}}' />
+        <input hidden='true' value='{{item.releaseid}}' name="releaseid"></input>
+        <input hidden='true' value='{{idx}}' name="index"></input>
+        <button class='button' form-type="submit">发送</button>
+      </view>
+    </form>
+  </view>
+  <view class='bottom'></view>
+
+</view>

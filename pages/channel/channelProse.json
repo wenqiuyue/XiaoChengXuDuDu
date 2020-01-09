@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "novel": "../../components/novel/novel"
+    
+  }
+}

@@ -1,0 +1,22 @@
+<!-- 书架 -->
+<!--pages/InterestBook/InterestBook.wxml-->
+<!-- 更多书籍 -->
+<view>
+  <!-- 删除发布提示 -->
+  <van-dialog 
+  title="标题" 
+  message="确定删除这本书吗" 
+  show="{{ isDelBookShelves }}" 
+  show-cancel-button 
+  bind:confirm="onConfirmDelBookShelves"           bind:cancel="onCancelDelBookShelves">
+  </van-dialog>
+
+  <van-card wx:for="{{bookShelves.bookShelves}}" wx:key="bookShelves" thumb="{{item.cover}}" lazy-load="true" class="custom-class" title="{{item.title}}" bindtap="bookInfo" data-id="{{item.bookid}}" bindlongpress="delBook">
+    <view slot="bottom">
+      <view>作者：{{item.author}}</view>
+      <view>{{item.majorCate}} | {{item.minorCate}} |
+        <label class='follower'>{{item.latelyFollower}}</label>人气</view>
+      <view class='desc'>{{item.longIntro}}</view>
+    </view>
+  </van-card>
+</view>

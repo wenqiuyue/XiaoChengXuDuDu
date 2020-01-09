@@ -1,0 +1,19 @@
+.page{
+  text-align: center;
+  padding: 0 25rpx;
+}
+.icon{
+  margin-top: 18vh;
+  padding-bottom: 50rpx;
+}
+.icon image{
+  width:360rpx;
+  height: 260rpx;
+}
+.tips{
+  font-size: 27rpx;
+  color: grey;
+}
+.button{
+  margin-top: 25rpx;
+} 

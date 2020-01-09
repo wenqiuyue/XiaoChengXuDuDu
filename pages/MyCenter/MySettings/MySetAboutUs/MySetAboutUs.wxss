@@ -1,0 +1,49 @@
+/* pages/aboutus/aboutus.wxss */
+.about_banner{
+  height: 350rpx;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  /*background: #aaadff;*/
+}
+.about_banner_bg{
+  height: 350rpx;
+  width: 100%;
+  background: url('http://duduapp.3vdo.net/img/about.png') no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  position:absolute;
+  z-index: -1;
+}
+.about_banner image{
+  margin-top: 80rpx;
+  border-radius: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+}
+.du{
+   margin-top: 10rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #3d3d3d;
+}
+.banben{
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+.about_content{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  color: #3d3d3d;
+}
+.about_txt{
+  font-size: 28rpx;
+}
+.about_xieyi{
+  color: #0eabcf;
+}
+.about_lianxi{
+  color: #6a6a6a;
+}

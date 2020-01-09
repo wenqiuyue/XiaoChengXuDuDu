@@ -1,0 +1,40 @@
+<!--pages/yaoyao/yaoyiyao.wxml-->
+<view class="container" >
+<audio  src="{{srcaud}}" id="myAudio" ></audio>
+  <image class='bg' src='/img/icons/bg.png'></image>
+  <view class="advert">
+    <view class="bg1" >
+      <view class='list-item'> 
+        <image  wx:for="{{allData}}" src='{{item.cover}}' alt="" bindtap='getBooks' data-bookid='{{item._id}}'></image>
+      </view>
+      <view class='list-item'> 
+        <image src='{{item.cover}}' alt="" bindtap='getBooks' data-bookid='{{item._id}}'></image>
+      </view>
+    </view>
+    <view class="bg2">
+      <view class="icon08">
+        <image src="/img/icons/icon-08.png" alt=""></image>
+      </view>
+      <view class="icon09">
+        <image src="/img/icons/icon-09.png" alt=""></image>
+      </view>
+      <view class="icon10">
+        <image src="/img/icons/icon-10.png" alt=""></image>
+      </view>
+    </view>
+    <view class="bg3">
+      <view class="icon11">
+        <image src="/img/icons/icon-11.png" alt=""></image>
+      </view>
+      <view class="icon12">
+        <image src="/img/icons/icon-12.png" alt=""></image>
+      </view>
+    </view>
+  </view>
+  
+  <view class='yaoyao'>
+    <image src='/img/icons/yao.png'></image>
+    <view class='yao'>摇一摇,寻找喜欢的书</view>
+  </view> 
+</view>
+<custom-tabbar activeIndex='3'></custom-tabbar>

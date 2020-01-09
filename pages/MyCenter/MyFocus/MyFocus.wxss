@@ -1,0 +1,61 @@
+/* pages/MyFocus/MyFocus.wxss */
+page{
+   background-color: white;
+}
+/*显示已关注部分样式*/
+.focused{
+   border-bottom: 1rpx solid #f0f0f0; 
+   width: 90%;
+   height: 130rpx;
+   margin-top: 5rpx;
+   margin-left: 5%;
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   align-content:center;
+  
+}
+.focusedIcon{
+  width:90rpx;
+  height: 90rpx;
+  border-radius: 50%; /* 使头像的图片变为圆形 */
+  overflow: hidden;
+}
+.focusedLeft{
+  display: flex;
+}
+.focused-avater{
+  /* 头像的框框 */
+  padding-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.focusedDes{
+  height: 80rpx;
+  width: 400rpx;
+  display: flex;
+  align-items: center;
+}
+.focused-name{
+  font-size: 27rpx;
+  font-weight: bold;
+}
+.focused-from{
+  color: #A6A6A6;
+  font-size: 28rpx;
+}
+.focused-Right{
+  display: flex;
+}
+.focusedConcern{
+  font-size: 27rpx;
+  line-height: 60rpx;
+  width: 130rpx;
+  height: 60rpx;
+  border-radius: 35rpx;
+  margin-left: 5%;
+  margin-top: 5px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content:center;
+}

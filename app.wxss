@@ -1,0 +1,25 @@
+/**app.wxss**/
+page{
+    font-family: 微软雅黑;
+    background: #f0f0f0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+} 
+/*遮罩层 */  
+.shade{   
+  width:100%;   
+  height:100%;   
+  top:0;   
+  background:rgba(0,0,0,0.5);   
+  overflow: hidden;   
+  /*要显示在wrap的上面 */   
+  position: absolute;  
+  z-index: 99;
+  pointer-events: none;
+  } 
+  .bottom{
+  height: 120rpx;
+}
+  

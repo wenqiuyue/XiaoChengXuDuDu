@@ -1,0 +1,12 @@
+<!-- 授权页 -->
+<view class='page'>
+  <!-- 图标 -->
+  <view class='icon'>
+    <image src='/img/minilogo.png'></image>
+  </view>
+  <!-- 提示 -->
+  <text class='tips'>必须完成微信授权才能继续使用（只获取您的昵称、头像、地区及性别）</text>
+  <!-- 按钮 -->
+  <van-button type="primary" size='large' block="true" custom-class="button" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权微信用户信息</van-button>
+</view>
+

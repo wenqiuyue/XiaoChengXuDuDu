@@ -1,0 +1,40 @@
+.books{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 22rpx;
+}
+.book_big{
+  height: 645rpx;
+  width: 49.2%;
+  background: white;
+  margin-top: 14rpx;
+  font-size: 23rpx;
+
+  color: #9E9E9E;
+  box-shadow: 0 0 3px #b6b5b5;
+}
+.book_big image{
+  height: 330rpx;
+  padding-top: 10rpx;
+  width: 67%;
+  margin-left: 16%;
+}
+.title{
+  margin-top: 10rpx;
+  color: gray;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.book_big text{
+  padding: 0 10rpx;
+  line-height: 43rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}

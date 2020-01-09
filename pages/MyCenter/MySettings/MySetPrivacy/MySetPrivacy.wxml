@@ -1,0 +1,19 @@
+<!--pages/MyCenter/MySettings/MySetPrivacy/MySetPrivacy.wxml-->
+<!--pages/me/shezhi/shezhi.wxml-->
+<view class='container'>
+<view class='MySettings_01zu'>
+    <view class='MySettings_01zu_1'>
+      <text class='title'>显示我喜欢的文章</text>
+      <switch class='switch' bindchange="switch2Change" color='#0eabcf' />
+    </view>
+    <view class='MySettings_01zu_2'>
+      <text class='title'>显示我的关注</text>
+      <switch class='switch' bindchange="switch2Change" color='#0eabcf'/>
+    </view>
+    <view class='MySettings_01zu_2'>
+      <text class='title'>显示我的粉丝</text>
+      <switch class='switch' bindchange="switch2Change" color='#0eabcf'/>
+    </view>
+</view>
+</view>
+

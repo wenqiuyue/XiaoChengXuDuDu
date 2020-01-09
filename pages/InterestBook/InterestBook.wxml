@@ -1,0 +1,11 @@
+<!--pages/InterestBook/InterestBook.wxml-->
+<!-- 更多书籍 -->
+<view>
+  <van-card wx:for="{{interestbook}}" title="{{item.title}}" thumb="{{item.cover}}" lazy-load="true" class="custom-class" bindtap="bookInfo" data-id="{{item._id}}">
+    <view slot="bottom">
+      <view>作者：{{item.author}}</view>
+      <view>{{item.majorCate}} | {{item.minorCate}} | <label class='follower'>{{item.latelyFollower}}</label>人气</view>
+      <view class='desc'>{{item.shortIntro}}</view>
+    </view>
+  </van-card>
+</view>

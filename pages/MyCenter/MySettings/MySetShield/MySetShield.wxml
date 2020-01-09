@@ -1,0 +1,14 @@
+<!--pages/MyCenter/MySettings/MySetShield/MySetShield.wxml-->
+<view class='container'>
+<view class='MySetShield_01zu'>
+    <view bindtap='jump_heimd' class='MySetShield_01zu_1' hover-class='ui_hover'>
+      <text class='title'>黑名单管理</text>
+      <text class='detail2'> ></text>
+    </view>
+    <view bindtap='jump_biaoqian' class='MySetShield_01zu_2' hover-class='ui_hover'>
+      <text class='title'>标签屏蔽管理</text>
+      <text class='detail2'> ></text>
+    </view>
+</view>
+</view>
+

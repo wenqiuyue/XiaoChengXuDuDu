@@ -1,0 +1,56 @@
+.main{ 
+  background: #F0F0F0;
+  font-family: 微软雅黑;
+  padding-bottom: 20rpx;
+}
+.top_background{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 413rpx;
+}
+.navclass{
+  background-color: #2FB4D7;
+}
+.van-ellipsis{
+  color: white;
+}
+.banner{
+  position: absolute;
+  width: 96vw;
+  height: 320rpx;
+  z-index: 100;
+  top: 92rpx;
+  left: 15rpx;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  border-radius: 20rpx;
+}
+.bookmain{
+  width: 100%;
+  z-index: 99;
+  padding: 0rpx 10rpx;
+}
+.member{
+  width: 97.2%;
+  height: 90rpx;
+  background: white;
+  margin-top: 283rpx;
+  display: flex;
+  align-items:center;
+}
+.member text{
+  width: 110rpx;
+  /* border: 1px solid red; */
+  font-size: 37rpx;
+  color: #6A6A6A;
+
+}
+custom-tabbar{
+  z-index: 1000;
+  position: absolute;
+  
+}

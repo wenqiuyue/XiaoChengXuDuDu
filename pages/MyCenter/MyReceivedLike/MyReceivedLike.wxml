@@ -1,0 +1,23 @@
+<!--pages/MyReceivedLike/MyReceivedLike.wxml-->
+<view class="container">
+    <!--已关注的粉丝-->
+    <view class='MyReceivedLike'>
+          <view class='MyRLikeLeft'>
+            <view class='MyRLike-avater'>
+              <image class='MyRLikeIcon' src='/img/Myfocus_tx1.jpg'></image>
+            </view>
+          <view class='MyRLikeDes'>
+          <view class='MyRLike-name'>薛之谦</view>
+           <view class='MyRLikesEvent'>
+                  <text class='MyRLikesTime'> 2-11 19:00</text>
+                  <text class='MyRLikesword'> 喜欢了你的图片</text>
+                  </view>
+           </view>
+          </view>
+          <view class='MyRLikeRight'>
+          
+          <image class='MyRLike-RightIcon' src='/img/Myfocus_tx1.jpg'></image>
+          </view>
+        </view>
+
+</view>

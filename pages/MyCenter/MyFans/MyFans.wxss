@@ -1,0 +1,64 @@
+/* pages/MyFans/MyFans.wxss */
+page{
+   background-color: white;
+}
+/*显示已关注部分样式*/
+.fans{
+   border-bottom: 1rpx solid #f0f0f0; 
+   width: 90%;
+   height: 115rpx;
+   margin-top: 5rpx;
+   margin-left: 5%;
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+   align-content:center;
+  
+}
+.fansIcon{
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 50%; /* 使头像的图片变为圆形 */
+  overflow: hidden;
+  
+}
+.fansLeft{
+  display: flex;
+}
+.fans-avater{
+  display: flex;
+  align-items: center;
+}
+.fans-name{
+  font-weight: 700;
+  font-size: 27rpx;
+  padding-left: 20rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 30px;
+}
+/* 关注的按钮样式 */
+.fansRight{  
+  font-size: 27rpx;
+  line-height: 60rpx;
+  width: 130rpx;
+  height: 60rpx;
+  margin-left: 5%;
+  margin-top: 5px;
+  display: flex;
+  justify-content:center;
+}
+/* 未关注的按钮样式 */
+.UnfansRight{  
+  font-size: 28rpx;
+  line-height: 60rpx;
+  width: 130rpx;
+  height: 60rpx;
+  border-radius: 35rpx;
+  margin-left: 5%;
+  margin-top: 5px;
+  background-color: #0ea6cf;
+  color:white;
+  display: flex;
+  justify-content:center;
+}

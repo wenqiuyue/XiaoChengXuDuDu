@@ -1,0 +1,80 @@
+.bookdetails{
+  position: relative;
+  margin-top: 15rpx;
+  
+}
+.bookpic_bac{
+  width: 100%;
+  height: 480rpx;
+  opacity:0.3;
+}
+.bookdetails_top{
+  position: absolute;
+  height:405rpx;
+  width: 94%;
+  background-color: white;
+  top: 180rpx;
+  margin-left: 3%;
+  opacity:0.8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.bookpic{
+  position: absolute;
+  width: 37%;
+  height: 59%;
+  left:31%;
+  top: 20rpx; 
+  z-index: 99;
+}
+.text_big{
+  position: absolute;
+  font-size: 33rpx;
+  top: 120rpx;
+  margin-top: 20rpx;
+  font-weight: bold;
+}
+.text_big1{
+  position: absolute;
+  font-size: 28rpx;
+  top: 175rpx;
+  margin-top: 20rpx;
+}
+.see{
+  display: flex;
+  justify-content: space-between;
+  height: 70rpx;
+  width: 80%;
+  /* border: 1px solid rebeccapurple; */
+  position: absolute; 
+  top: 230rpx;
+  font-size: 28rpx;
+  color: #A1A1A1;
+  align-items: center;
+}
+.read{
+  padding: 0 30rpx;
+  font-size: 35rpx;
+  color: #B93321;
+  z-index: 999;
+  margin-top: -6rpx;
+  position: absolute; 
+ 
+}
+.read view{
+  display: flex;
+  justify-content: center;
+  line-height: 95rpx;
+  width: 310rpx;
+  height: 90rpx;
+  border: 1px solid #B93321;
+  float: left;
+
+}
+.begin{
+  background:#B93321;
+  color: white;
+  margin-left: 61rpx;
+ 
+}

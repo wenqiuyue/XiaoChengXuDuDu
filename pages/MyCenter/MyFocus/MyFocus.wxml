@@ -1,0 +1,18 @@
+<!--pages/MyFocus/MyFocus.wxml-->
+<view class="container" >
+  <!--每一个显示已关注的-->
+  <view class='focused' wx:for="{{myFocus}}" wx:key="myFocus">
+    <view class='focusedLeft' bindtap='focusRelease' data-rid='{{item.ruserid}}'>
+      <view class='focused-avater'>
+        <image class='focusedIcon' src='{{item.userimg}}'></image>
+      </view>
+      <view class='focusedDes'>
+        <view class='focused-name'>{{item.username}}</view>
+      </view>
+    </view>
+    <view class='focused-Right'>
+      <view class='focusedConcern' bindtap='removeFocus' data-ruserid='{{item.ruserid}}' data-idx='{{index}}'>取消关注</view>
+    </view>
+  </view>
+
+</view>

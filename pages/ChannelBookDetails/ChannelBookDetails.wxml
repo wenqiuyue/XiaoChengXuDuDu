@@ -1,0 +1,71 @@
+<!-- 书籍详情 -->
+<!-- 顶部 -->
+<view class='bookdetails'>
+  <!-- 顶部背景透明图片 -->
+  <image class='bookpic_bac' src="{{bookinfo.cover}}"></image>
+  <!-- 白色透明背景部分 -->
+  <view class="bookdetails_top">
+    <text class='text_big'>{{bookinfo.title}}</text>
+    <text class='text_big1'>作者：{{bookinfo.author}}</text>
+    <!-- 顶部下部分 -->
+    <view class='see'>
+      <text>更新于：{{bookinfo.updated}}</text>
+      <text>评分：{{bookinfo.rating.score}}</text>
+    </view>
+  </view>
+  <!-- 书的清晰图片 -->
+  <image class='bookpic' src="{{bookinfo.cover}}"></image>
+  <view class='read'>
+    <view bindtap='joinBookShelves'>加入书架</view>
+    <view class='begin' bindtap='beginRead'>开始阅读</view>
+  </view>
+</view>
+
+<!-- 简介 -->
+<view class='introduction'>
+  <view class='introduction_top'>
+    <text class="introduction_title">简介</text>
+    <text class='more' bindtap='more'>更多>></text>
+  </view>
+  <view class='introduction_main'>
+    <text>{{bookinfo.longIntro}}</text>
+  </view>
+</view>
+
+<!-- 目录 -->
+<view class='introduction chapter'>
+  <text class="introduction_title">目录</text>
+  <text class='more' bindtap='chapter'>进入>></text>
+</view>
+
+<!-- 评论区 -->
+<view class='introduction comment'>
+  <view class='comment_top'>
+    <text class="introduction_title">评论区</text>
+    <text class='more commen_more'>更多>></text>
+  </view>
+  <!-- 评论内容 -->
+  <view class='commen_main' wx:if="{{haveComment}}">
+    <!-- 头像 -->
+    <view class='head'>
+      <image class='headpic' src='../../img/Myfocus_tx1.jpg'></image>
+      <text>云霓</text>
+    </view>
+    <!-- 内容 -->
+    <view class='commen_text'>
+      <text>对自己现在的观念有很大的改变，做个有理想抱负的人，推荐给青少年快捷方式客户可减肥的聚隆科技螺蛳粉交流方式</text>
+    </view>
+    <!-- 底部 -->
+    <view class='commen_bottom'>
+      <text class='commen_time'>5月前</text>
+      <view class='commen_fabulous'>
+        <image src='../../img/icon/likered.png'></image>
+        <text decode="{{true}}">&nbsp;43</text>
+        <image src='../../img/home/pic1.png'></image>
+        <text decode="{{true}}">&nbsp;21</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 书籍推荐 -->
+<interest bookid="{{bookid}}"></interest>

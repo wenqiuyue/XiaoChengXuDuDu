@@ -1,0 +1,205 @@
+.homebanner{
+  width: 100%;
+  height: 270rpx;
+
+}
+.homebanner image{
+  width: 100%;
+  height: 100%;
+}
+.van-notice-bar{
+  margin-top: 7rpx;
+}
+.last_reading{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 160rpx;
+  background: white;
+  margin-top:7rpx;
+
+}
+.last_reading image{
+  margin-left: 50rpx;
+  height: 83%;
+  width: 15%;
+ 
+}
+.last_reading text{
+  font-size: 27rpx;
+  color: #625F60;
+}
+#continue{
+  display: flex;
+  align-items: center;
+  margin-left: 130rpx;
+}
+.recommend{
+  width: 100%;
+  background: white;
+  margin-top: 7rpx;
+  padding: 20rpx 20rpx;
+}
+.recommend_title{
+  width: 100%;
+  height: 65rpx;
+  font-size: 32rpx;
+  color: #625F60;
+  border-bottom: 1px dashed #D8D6D7;
+  padding-top: 5rpx;
+  padding-left: 35rpx;
+}
+.comment{
+  width: 100%;
+}
+.comment_pic{
+  display: flex;
+  align-items: center;
+  height: 31rpx;
+  margin-top: 40rpx;
+  /* border: 1px solid red; */
+}
+
+.comment_pic image{
+  height: 35rpx;
+  width: 55rpx;
+  margin-left: 15rpx;
+}
+.comment_pic text{
+  margin-left: 10rpx;
+  font-size: 27rpx;
+  color: #807F7F;
+}
+
+.commentuser{
+  color: #92C1FC;
+}
+.content{
+  width: 100%;
+  border-bottom: 1px dashed #D8D6D7;
+  height: 330rpx;
+}
+.head{
+  position:relative;
+  display: flex;
+  height: 120rpx;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.headpic{
+  height: 90%;
+  width: 115rpx;
+  border-radius: 50%;
+  margin-left: 15rpx;
+}
+.head text{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #807F7F;
+}
+.close{
+  position:absolute;
+  height: 30rpx;
+  width: 30rpx;
+  right: 40rpx;
+  top: 15rpx;
+}
+.recommendtext{
+  position: relative;
+  height:50%;
+  /* border: 1px solid red; */
+  color: #807F7F;
+  font-size: 28rpx;
+  padding-left: 50rpx;
+}
+.recommendtext text{
+  position: absolute;
+  width: 85%;
+  top: 15rpx;
+}
+.re_text{
+  line-height: 50rpx;
+  margin-top: 60rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.seetext{
+  position: relative;
+  height: 20%;
+  /* border: 1px solid red; */
+}
+.seetext button{
+  position: absolute;
+  width: 138rpx;
+  font-size: 20rpx;
+  right: 25rpx;
+  top: 5rpx;
+  background-color: #E5E3E4;
+
+}
+.no-release{
+  text-align: center;
+  margin-top: 50rpx;
+}
+.text{
+  font-size: 26rpx;
+  border: 1px solid #F0F0F0;
+  width: 75%;
+  height: 55rpx;
+}
+.com{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 45rpx;
+}
+.button{
+  background: #2FB4D7;
+  color: white;
+  width: 120rpx;
+  height: 55rpx;
+  font-size: 26rpx;
+  line-height: 55rpx;
+
+}
+.comtext{
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  width: 93%;
+}
+.commenttext{
+  line-height: 45rpx;
+}
+.comment_content{
+  /* border: 1px solid red; */
+  font-size: 27.5rpx;
+  color: #807F7F;
+  margin-top: 13rpx;
+}
+.guanzhu{
+  height: 42rpx;
+  width: 95rpx;
+  border: 1px solid #2FB4D7;
+  font-size: 26rpx;
+  margin-left: 220rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 10%;
+   color: #807F7F;
+}
+.recordBook-title{
+  width: 295rpx;
+   margin-left: 20rpx;
+}
+.recordBook-continue{
+  margin-left: 103rpx;
+}
+.r_username{
+  width: 200rpx;
+}
+
+

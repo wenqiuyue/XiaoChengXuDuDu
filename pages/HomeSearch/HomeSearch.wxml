@@ -1,0 +1,38 @@
+<view class="main">
+   <!-- 头部背景部分 -->
+  <image class='top_background' src='../../img/topbackground.png'></image>
+  <!-- 搜索框 -->
+  <view class='topsearch'>
+    <input class="search" name="search" placeholder="搜索一下，发现更多内容"
+      bindinput ="userNameInput"/>
+    <image class='search_pic' src='../../img/icon/search.png'></image>
+
+  </view>
+  <!-- 分割线 -->
+  <view id='dividingline'></view>
+  <!-- 搜索历史 -->
+  <view class='search_history'>
+    <image src='../../img/home/searchtime.png'></image>
+    <text>搜索历史</text>
+    <image id='delet' src='../../img/home/delet.png'></image>
+  </view>
+   <!-- 搜索内容 -->
+    <view class='searchtext'>
+      <text class='searchmain_small'>小王子</text>
+      <text class='searchmain_small'>小王子</text>
+      <text class='searchmain_big'>小王子</text>
+    </view>
+    <view class='searchtext1'>
+      <text class='searchmain_small'>小王子</text>
+      <text class='searchmain_big'>小王子</text>
+      <text class='searchmain_big'>小王子</text>
+    </view>
+
+    <!-- 热门推荐 -->
+    <view class='recommendation'>
+      <view id='recommendationtext'>热门推荐</view>
+      <view class='recommendationmain'>#那些转行的理想主义者#</view>
+       <view class='recommendationmain'>《流浪地球》</view>
+        <view class='recommendationmain'>《不能承受的生命之轻》</view>
+    </view>
+</view>

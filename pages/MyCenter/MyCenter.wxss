@@ -1,0 +1,128 @@
+/* pages/me/me.wxss */
+.container{
+  padding: 3rpx 0;
+}
+/****/
+.MyHomeAboutMe_banner{
+  width: 100%;
+  height: 350rpx;
+  color: white;
+  background: #2FB4D7;
+}
+/**banner布局**/
+.MyHomeAboutMe_banner{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+/**头像**/
+.MyHomeAboutMe_tx{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+/**昵称、VIP**/
+.MyHomeAboutMe_banner_txt01{
+  display: flex;
+  align-items:center;
+}
+.MyHomeAboutMe_banner_txt01 text{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+/**关注粉丝收藏**/
+.MyHomeAboutMe_nav{
+  display: flex;
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.MyHomeAboutMe_nav_item{
+ margin-left: 40rpx;
+}
+/**昵称、VIP、介绍**/
+.MyCenter_banner_txt{
+  display: flex;
+  flex-direction:column;
+  margin-left: 20rpx; 
+}
+/**昵称、VIP**/
+.MyCenter_banner_txt01{
+  display: flex;
+  align-items:center;
+}
+.MyCenter_banner_txt01 image{
+  height: 65rpx;
+  width: 80rpx;
+  margin-left: 10rpx;
+}
+.MyCenter_banner_txt01 text{
+  font-size: 30rpx;
+  color: white;
+}
+/**介绍**/
+.MyCenter_jieshao{
+  font-size: 28rpx;
+  color: white;
+}
+.MyCenter_xiugaizl{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 40rpx;
+}
+/**关注、粉丝、收藏**/
+.MyCenter_nav{
+  display: flex;
+  width: 100%;
+  margin-top: 95rpx;
+  /* background: linear-gradient(rgba(255,0,0,0), rgba(146,155,174,1)); */
+}
+.MyCenter_nav_item{
+  flex: 1;
+}
+.MyCenter_nav_item text{
+  display: block;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+}
+/**我的 列表**/
+.MyCenter_list{
+  margin-top: 10rpx;
+  width: 100%;
+  background: white;
+}
+.MyCenter_list01{
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 5rpx solid #f0f0f0;
+  background: white;
+  display: flex;
+  padding-left: 40rpx;
+  align-items:center;
+}
+.MyCenter_list01 image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.MyCenter_list01 text{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+/**客服**/
+button::after {
+  border: none
+}
+.kefu{
+  border-radius:0;
+}
+/**hover**/
+.nav_ui_hover{
+  background: #3D3D3D;
+  opacity: 0.3;
+}
+.ui_hover{
+  background: #DCDCDC;
+}

@@ -1,0 +1,7 @@
+<!--pages/StartUp/StartUp.wxml-->
+<view class="container">
+    <view class="start"><image src="/img/londing.jpg" /></view> 
+    <view class="start-container">
+        <text class="start_on">立即开启</text>
+    </view>
+</view>

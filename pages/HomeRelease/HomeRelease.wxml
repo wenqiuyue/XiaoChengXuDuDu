@@ -1,0 +1,18 @@
+<!--pages/HomeRelease/HomeRelease.wxml-->
+<!-- 发布界面 -->
+<!-- 书籍章节页面 -->
+<view class='chapter'>
+  <!-- 背景图片 -->
+  <view class='bgimg'>
+    <image src='/img/jingyu.png'></image>
+  </view>
+  
+  <form bindsubmit="formsubmit">
+    <input class='text' placeholder="您的标题" focus="true" name="title"/>
+    <view class='title-line'></view>
+    <textarea class='text tex' placeholder="请输入内容..." auto-height="true" name="textarea"></textarea>
+    <view class='line'></view>
+    <button class='button' form-type="submit" >提交</button>
+  </form>
+</view>
+

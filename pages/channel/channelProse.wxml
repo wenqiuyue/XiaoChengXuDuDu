@@ -1,0 +1,28 @@
+<scroll-view scroll-y='true' bindscrolltolower='lower' style="height:{{windowHeight}}px;">
+  <view class="main">
+    <!-- 头部背景部分 -->
+    <image class='top_background' src='../../img/topbackground.png'></image>
+    <van-tabs active="{{ active }}" animated='true' swipeable='true' tab-class='navclass' color='white' line-width='80' bind:click='typeClick'>
+      <van-tab title="{{item}}" data-name="{{item}}" wx:for='{{navArray}}' wx:key="type">{{item}}</van-tab>
+    </van-tabs>
+    <swiper class='banner' autoplay="true" indicator-dots="true" indicator-active-color="#2FB4D7" circular="true">
+      <swiper-item>
+        <image src='../../img/banner/banner.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='../../img/banner/banner2.jpg'></image>
+      </swiper-item>
+    </swiper>
+    <!-- 书籍列表 -->
+    <view class='bookmain'>
+      <!-- 会员 -->
+      <view class='member'>
+        <text>免费</text>
+        <text>会员</text>
+      </view>
+      <!-- 书籍列表组件 -->
+      <novel bookType="{{typeName}}" id="novel" limit="{{limit}}"></novel>
+    </view>
+  </view>
+  <custom-tabbar activeIndex='1'></custom-tabbar>
+  </scroll-view>

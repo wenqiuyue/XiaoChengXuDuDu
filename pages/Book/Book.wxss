@@ -1,0 +1,28 @@
+/* pages/Book/Book.wxss */
+.page{
+  background: #EEE6DD;
+  padding: 20rpx 30rpx;
+  
+}
+.content{
+  margin-top: 30rpx;
+  font-size: 33rpx;
+  line-height: 55rpx;
+  color: #5C5D58;
+  text-align: justify;
+  text-indent: 2em;
+}
+.content::after{
+  content: '';
+  display: inline-block; 
+  padding-left: 100%;
+}
+.van-popup{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  font-size: 50rpx;
+
+}
+

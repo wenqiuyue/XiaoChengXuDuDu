@@ -1,0 +1,209 @@
+/* pages/MyCollection/MyCollection.wxss */
+page{
+   background-color: white;
+}
+.MyCollectionSelect{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f0f0f0;
+}
+.CSelect-left{
+  font-size: 32rpx;
+  font-weight: 700;
+  padding-left: 20rpx;
+}
+.CSelect-right{
+float: right;
+padding-right: 20rpx;
+}
+.container{
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+swiper{
+  width: 100%;
+  height: 580rpx;
+}
+.slide-image{
+   width: 100%;
+   height: 100%;
+   display: inline-block;
+   overflow: hidden;
+}
+.near{
+   width: 100%;
+   height: 150px;
+}
+.section{
+  width: 100%;
+  height: 560rpx;
+}
+.sectionTitle{
+  padding-top: 12rpx;
+  padding-left: 20rpx;
+  width:100%;
+  height:80rpx;
+  line-height:80rpx;
+  position: relative;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.section__title::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12rpx;
+  background:#f0f0f0;
+}
+/*滚动条*/
+.scroll-view_H{
+  height:545rpx;
+  white-space: nowrap;
+  display: flex;
+
+}
+.scroll-view-item_H{
+  width:340rpx;
+  height:545rpx;
+  margin-right: 24rpx;
+  display: inline-block;
+
+}
+.scroll-image{
+  width:340rpx;
+  height:280rpx;
+  display: block;
+}
+/*文章框框*/
+.scroll-view-item_H .content{
+  width: 338rpx;
+  height: 170rpx;
+  border: 1rpx solid #f0f0f0;
+}
+/*收藏的文章名*/
+.title{
+  background-color:#f0f0f0;
+  margin-top: 10rpx;
+  height:40rpx;
+  line-height:40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*收藏的时间*/
+.scroll-view-item-AT{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 40rpx;
+  font-size: 11px;
+  margin-left: 10rpx;
+}
+.day{
+  float:left;
+  width: 60rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+/*作者*/
+.scroll-view-item-cf{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+}
+.camerist_avatar{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+/*logo*/
+.camerist_avatar image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-left: 10rpx;
+  vertical-align: middle;
+}
+/*作者名*/
+.camerist_name{
+  float: left;
+  margin-left: 20rpx;
+  width: 160rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10rpx;
+}
+.fee{
+  float: right;
+  width: 80rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  text-align: right;
+  padding-right: 10rpx;
+  margin-top: 10rpx;
+}
+.more{
+ position: relative;
+ width: 100%;
+ height: 80rpx;
+ line-height: 60rpx;
+ text-align: center;
+ font-size: 28rpx;
+ color:#6a6a6a;
+ vertical-align: middle;
+}
+.more::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rpx;
+  background:#f0f0f0;
+}
+.near{
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+}
+.near image{
+  width: 100%;
+  height: 350rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.near text{
+  width: 100%;
+  height: 350rpx;
+  line-height: 350rpx;
+  margin-left: 140rpx;
+  font-size: 40rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 60;
+  color: #f0f;
+
+}

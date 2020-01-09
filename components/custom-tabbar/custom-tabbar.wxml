@@ -1,0 +1,10 @@
+<view class="tabbar-wrap">
+      <view class='tabbar-item' wx:for='{{data.tabs}}' wx:key='' bindtap='clickTag' data-index='{{index}}'>
+         <image src="{{index == activeIndex?item.activeImg:item.inactiveImg}}" wx:if='{{item.activeImg}}' ></image>
+         <view wx:if="{{item.content}}" style='color:{{index == activeIndex?data.tabStyle.activeColor:data.tabStyle.inactiveColor}}'>{{item.content}}</view>
+      </view>
+      <view class='tabbar-middle' bindtap='bindMiddleTab'>
+         <image src='../../img/icon/tabbar/icon9.png' class='middle-img tab-animated'></image>
+         <text>独读</text>
+      </view>
+</view>

@@ -1,0 +1,33 @@
+<!-- 更多简介 -->
+<!-- 顶部 -->
+<view class='bookdetails'>
+  <!-- 顶部背景透明图片 -->
+  <image class='bookpic_bac' src="{{bookinfo.cover}}"></image>
+  <!-- 白色透明背景部分 -->
+  <view class="bookdetails_top">
+    <text class='text_big'>{{bookinfo.title}}</text>
+    <text class='text_big1'>作者：{{bookinfo.author}}</text>
+    <!-- 顶部下部分 -->
+    <view class='see'>
+      <text>更新于：{{bookinfo.updated}}</text>
+      <text>评分：{{bookinfo.rating.score}}</text>
+    </view>
+    <view class='read'>
+      <view>加入书架</view>
+      <view class='begin' bindtap='begin'>开始阅读</view>
+    </view>
+  </view>
+  <!-- 书的清晰图片 -->
+  <image class='bookpic' src="{{bookinfo.cover}}"></image>
+
+</view>
+
+<!-- 简介 -->
+<view class='introduction'>
+  <view class='introduction_top'>
+    <text class="introduction_title">简介</text>
+    <view class='introduction_main'>
+   {{bookinfo.longIntro}}
+  </view>
+  </view> 
+</view>

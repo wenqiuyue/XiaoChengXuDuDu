@@ -1,0 +1,22 @@
+<!--pages/aboutus/aboutus.wxml-->
+<!-- <view class='container'>
+<view class='about_banner_bg'></view>
+<view class='about_banner'>
+  <image src='/img/about_logo.png' ></image>
+  <text class='du'>独 · 读\n</text>
+  <text class='banben'>版本1.0</text>
+</view>
+<view class='about_content'>
+  <text class='about_txt'>本软件的下载、安装和使用完全免费，中国智汇科技有限公司不收取任何费用，下载、使用过程中产生的GPRS数据流量费用，有运营商收取。本软件内的作品由中国智汇科技有限公司提供使用，版权所有，侵权必究。 
+  <text class='about_xieyi'>
+  《独读用户协议》
+  《独读用户隐私政策详情》
+  </text>
+  <text class='about_lianxi'>
+  营销电话: 400-0708-360
+  客服电话400-0708-207
+  客服邮箱: 123548@163.com
+  </text>
+</text>
+</view>
+</view> -->

@@ -1,0 +1,11 @@
+<!-- 小说类书籍 -->
+  <view class='books'>
+    <view class='book_big' wx:for='{{books.books}}'  wx:key="book"  bindtap='bookInfo' data-id='{{item._id}}'>
+      <image src='{{item.cover}}'></image>
+      <view class='title'>
+        <text>《{{item.title}}》</text>
+        <text>作者：{{item.author}}</text>
+      </view>
+      <text>{{item.shortIntro}}</text>
+    </view>
+  </view>

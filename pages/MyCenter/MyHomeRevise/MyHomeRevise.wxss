@@ -1,0 +1,192 @@
+/* pages/MyHomeRevise/MyHomeRevise.wxss */
+
+.container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.avatar {
+  background-color: #fff;
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  position: relative;
+}
+
+.avatar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.nickName {
+  background-color: #fff;
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  vertical-align: middle;
+  position: relative;
+}
+
+.nickName::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.birthday {
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  vertical-align: middle;
+  position: relative;
+}
+
+.birthday::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.sex {
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  position: relative;
+}
+
+.sex::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.area {
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  position: relative;
+}
+
+.area::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.signature {
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  position: relative;
+}
+
+.signature::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.container text {
+  float: left;
+  color: #7b7b7b;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.container .real {
+  float: right;
+  margin-right: 20rpx;
+  vertical-align: middle;
+}
+
+.repassword {
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  vertical-align: middle;
+  position: relative;
+}
+
+.repassword::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform: scaleY(0.5);
+  background-color: #9d9d9d;
+}
+
+.a {
+  float: right;
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+}
+
+.n {
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 50rpx;
+  vertical-align: middle;
+  position: relative;
+  border-right: 20rpx solid transparent;
+  -webkit-filter: drop-shadow(20rpx 0 #000);
+  filter: drop-shadow(20rpx 0 #000);
+}
+
+.add_btn {
+  width: 100%;
+  position: fixed;
+  bottom: 30rpx;
+}
+.btn {
+  float: left;
+  outline: none;
+  margin-top: 30rpx;
+  width: 95%;
+  outline-color: none;
+  background: #0ea6cf;
+  color: #fff;
+  border-radius: 10rpx;
+}
+button::after{
+border: none;
+}

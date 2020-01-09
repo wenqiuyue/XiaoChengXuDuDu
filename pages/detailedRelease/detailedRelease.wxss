@@ -1,0 +1,147 @@
+/* pages/BookChapter/BookChapter.wxss */
+.recommend{
+  background: white;
+  margin-top: 7rpx;
+  padding: 20rpx 40rpx;
+}
+.recommend_title{
+  width: 100%;
+  height: 65rpx;
+  font-size: 32rpx;
+  color: #625F60;
+  border-bottom: 1px dashed #D8D6D7;
+  padding-top: 5rpx;
+  padding-left: 35rpx;
+}
+.comment{
+  width: 100%;
+}
+.comment_pic{
+  display: flex;
+  align-items: center;
+  height: 31rpx;
+  margin-top: 40rpx;
+  /* border: 1px solid red; */
+}
+.comment_pic image{
+  height: 35rpx;
+  width: 55rpx;
+  margin-left: 36rpx;
+}
+.comment_pic text{
+  margin-left: 10rpx;
+  font-size: 27rpx;
+  color: #807F7F;
+}
+
+.commentuser{
+  color: #92C1FC;
+}
+.head{
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.headpic{
+  height: 110rpx;
+  width: 115rpx;
+  border-radius: 50%;
+  margin-left: 50rpx;
+}
+.head text{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: #807F7F;
+}
+.recommendtext{
+  /* border: 1px solid red; */
+  color: #807F7F;
+  font-size: 28rpx;
+}
+.recommendtext text{
+  display: block;
+  margin-top: 25rpx;
+}
+.re_text{
+  line-height: 50rpx;
+  align-content: center;
+  text-align: justify;
+}
+.seetext{
+  position: relative;
+  height: 20%;
+  /* border: 1px solid red; */
+}
+.seetext button{
+  position: absolute;
+  width: 138rpx;
+  font-size: 20rpx;
+  right: 25rpx;
+  top: 5rpx;
+  background-color: #E5E3E4;
+
+}
+.no-release{
+  text-align: center;
+  margin-top: 50rpx;
+}
+.text{
+  font-size: 26rpx;
+  border: 1px solid #F0F0F0;
+  width: 75%;
+  height: 55rpx;
+}
+.com{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 45rpx;
+}
+.button{
+  background: #2FB4D7;
+  color: white;
+  width: 120rpx;
+  height: 55rpx;
+  font-size: 26rpx;
+  line-height: 55rpx;
+
+}
+.comtext{
+  padding: 10rpx 15rpx 10rpx 10rpx;
+}
+.commenttext{
+  line-height: 45rpx;
+}
+.comment_content{
+  /* border: 1px solid red; */
+  font-size: 27.5rpx;
+  color: #807F7F;
+  margin-top: 13rpx;
+}
+.guanzhu{
+  height: 42rpx;
+  width: 95rpx;
+  border: 1px solid #2FB4D7;
+  font-size: 26rpx;
+  margin-left: 195rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 10%;
+   color: #807F7F;
+}
+.recordBook-title{
+  width: 295rpx;
+   margin-left: 20rpx;
+}
+.recordBook-continue{
+  margin-left: 103rpx;
+}
+.r_username{
+  width: 200rpx;
+}
+.line{
+  border-bottom: 2rpx dashed #D8D6D7;
+  height: 1rpx;
+  width: 100%;
+  margin-top: 20rpx;
+}

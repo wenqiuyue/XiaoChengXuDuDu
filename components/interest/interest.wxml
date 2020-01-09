@@ -1,0 +1,15 @@
+<view class='interest'>
+  <view class='interest-car'>
+    <text>你可能感兴趣</text>
+    <text bindtap='interestMore'>更多</text>
+  </view>
+  <!-- 加载 -->
+  <van-loading wx:if="{{isShow}}" class="custom-class" type="spinner" color="#2FB4D7" size="40px"/>
+  <!-- 推荐的书 -->
+  <view class='interest-books'>
+    <view class='interest-book' wx:for="{{interestbook}}" wx:key="interestbook" wx:if="{{index<4}}" bindtap="bookInfo" data-id="{{item._id}}">
+      <image class='interest-book-img' src='{{item.cover}}'></image>
+      <text class='interest-book-name'>{{item.title}}</text>
+    </view>
+  </view>
+</view>

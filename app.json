@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/Authorization/Authorization",
+    "pages/MyCenter/MyCenter",
+    "pages/channel/channelProse",
+    "pages/ChannelBookDetails/ChannelBookDetails",
+    "pages/StartUp/StartUp",
+    
+    "pages/MyCenter/MySettings/MySettings",
+    "pages/yaoyiyao/yaoyiyao",
+    "pages/HomeRelease/HomeRelease",
+    "pages/HomeSearch/HomeSearch",
+    "pages/logs/logs",
+    "pages/MyCenter/MyFocus/MyFocus",
+    "pages/MyCenter/MyFans/MyFans",
+    "pages/MyCenter/MyCollection/MyCollection",
+    "pages/MyCenter/MyReceivedLike/MyReceivedLike",
+    "pages/MyCenter/MyHomeRevise/MyHomeRevise",
+    "pages/MyCenter/MySettings/MySetShield/MySetShield",
+    "pages/MyCenter/MySettings/MySetSkin/MySetSkin",
+    "pages/MyCenter/MySettings/MySetAboutUs/MySetAboutUs",
+    "pages/MyCenter/MySettings/MySetPrivacy/MySetPrivacy",
+    "pages/BookChapter/BookChapter",
+    "pages/BookInfoMore/BookInfoMore",
+    "pages/Book/Book",
+    "pages/MyRelease/MyRelease",
+    "pages/OtherRelease/OtherRelease",
+    "pages/InterestBook/InterestBook",
+    "pages/detailedRelease/detailedRelease",
+    "pages/BookShelves/BookShelves"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2FB4D7",
+    "navigationBarTitleText": "独·读",
+    "navigationBarTextStyle": "white"
+   
+  },
+  "usingComponents": {
+    "custom-tabbar": "components/custom-tabbar/custom-tabbar",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index",  
+    "van-popup": "/dist/popup/index",
+    "van-loading": "/dist/loading/index",
+    "van-card": "/dist/card/index",
+    "van-button": "/dist/button/index",
+    "van-notice-bar": "/dist/notice-bar/index",
+    "van-action-sheet": "/dist/action-sheet/index",
+    "van-dialog": "/dist/dialog/index"
+
+
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/Home/Home"
+      },
+      {
+        "pagePath": "pages/channel/channelProse"
+      },
+      {
+        "pagePath": "pages/yaoyiyao/yaoyiyao"
+      },
+      {
+        "pagePath": "pages/MyCenter/MyCenter"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
